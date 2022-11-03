@@ -2,8 +2,9 @@
   position: relative;
 }
 .banner .banner-img-mobile {
-  height: 4rem;
   display: block;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .banner .banner-img-pc {
@@ -46,15 +47,17 @@
 
 .company-profile-desc-cmp p {
   font-size: 0.24rem;
+  margin-bottom: 0.5rem;
 }
 
 .company-profile-fun {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .company-profile-fun li {
-  margin: 0 0.8rem 0.3rem 0.8rem;
+  margin: 0 0.3rem 0.3rem 0.3rem;
 }
 
 .company-profile-fun-icon {
@@ -62,6 +65,8 @@
   height: 1.67rem;
   background-color: white;
   border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 0.3rem;
   display: flex;
   justify-content: center;
@@ -292,13 +297,12 @@
 }
 
 .company-rele-content img {
-  width: 294px;
+  width: 3.28rem;
   display: block;
 }
 
 .company-rele-content-item {
   position: relative;
-  margin: 0 0 0.2rem 0;
 }
 
 .company-rele-content-item p {
@@ -335,9 +339,6 @@
   .industry-info img {
     width: 7rem;
   }
-  .company-rele-content-item {
-    margin: 0 0 0.2rem 0.3rem;
-  }
 }
 
 @media screen and (min-width: 992px) {
@@ -352,8 +353,18 @@
   .company-news-content-item-cont {
     max-width: 6.5rem;
   }
+
   .company-rele-content-item {
     margin: 0 5% 5% 5%;
+  }
+
+  .company-rele-content img {
+    width: 3.88rem;
+    display: block;
+  }
+
+  .company-rele-content-item {
+    margin: 0 0 0.2rem 0.3rem;
   }
 }
 
@@ -437,7 +448,7 @@
     font-size: 50px;
   }
   .company-profile-fun li p {
-    font-size: 12px;
+    font-size: 16px;
   }
 
   .industry-info h2,
@@ -558,7 +569,7 @@
     flex-wrap: nowrap;
   }
   .company-rele-content img {
-    width: auto;
+    width: 100%;
   }
 
   .company-rele-content-item:hover p {

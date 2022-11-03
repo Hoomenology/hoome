@@ -1,0 +1,24 @@
+<nav id="nav" class="nav-hoome">
+  <a href="/"><img src="/images/hoome.png" class="nav-img" alt="load fail"  class="float-left inline-block py-7 ml-10 " ></a>
+  <div class="container">
+    <div></div>
+      <ul class="nav-top">
+        {{ $menu := .Site.Menus.main }}
+        {{ range $index, $element := $menu }}
+          <a href="{{ $.Site.BaseURL }}{{ .URL }}"><li class="active">{{.Name}}</li></a>
+        {{ end }}
+      </ul>
+      <div class="nav-btn">
+        <svg t="1621998234161"  viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2113" width="200" height="200"><path d="M960 287.8H64c-35.3 0-64-28.7-64-64s28.7-64 64-64h896c35.3 0 64 28.7 64 64s-28.7 64-64 64zM960 576H64c-35.3 0-64-28.7-64-64s28.7-64 64-64h896c35.3 0 64 28.7 64 64s-28.7 64-64 64zM960 864.3H64c-35.3 0-64-28.7-64-64s28.7-64 64-64h896c35.3 0 64 28.7 64 64s-28.7 64-64 64z" p-id="2114"></path></svg>
+        <svg t="1622019749666" class="closed" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5717" width="200" height="200"><path d="M767.98 815.98c-12.31 0-24.56-4.69-33.94-14.06l-512-512c-18.75-18.75-18.75-49.12 0-67.88s49.13-18.75 67.88 0l512 512c18.75 18.75 18.75 49.12 0 67.88-9.38 9.38-21.63 14.06-33.94 14.06z" fill="#131414" p-id="5718"></path><path d="M255.98 815.98c-12.31 0-24.56-4.69-33.94-14.06-18.75-18.75-18.75-49.12 0-67.88l512-512c18.75-18.75 49.12-18.75 67.88 0s18.75 49.12 0 67.88l-512 512c-9.38 9.38-21.63 14.06-33.94 14.06z" fill="#131414" p-id="5719"></path></svg>
+      </div>
+  </div>         
+  <div class="nav-dialog closed">
+      <div class="nav-dialog-content">
+      {{ $menu := .Site.Menus.main }}
+      {{ range $index, $element := $menu }}
+        <a href="{{ $.Site.BaseURL }}{{ .URL }}"><p class="active">{{.Name}}</p></a>
+        {{ end }}         
+      </div>
+  </div> 
+</nav>

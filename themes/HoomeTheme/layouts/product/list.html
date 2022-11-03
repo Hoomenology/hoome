@@ -1,0 +1,85 @@
+{{ define "main" }}
+<div class="product-banner">
+  <img class="product-banner-img" src="/images/product_banner.jpg" alt="">
+  <div class="product-banner-desc">
+    <p>产品展示</p>
+  </div>
+</div>   
+<div class="container">
+  <div class="product-layout">
+    <ul class="menu-item">
+      <li class="link">车载冰箱</li>
+      <li class="link">电动工具</li>
+      <li class="link">家用冰箱</li>
+      <li class="link">移动空调</li>
+      <li class="link">制冰机</li>
+    </ul>
+    <div class="con-right">
+      <div id="content-right">
+        <h3 style="margin:2% 0"></h3>
+        <ul class="hide container-box">
+          <li><img src="/images/car_refrigerator/1.jpg" alt="" class="container-box-image"></li>
+          <li><img src="/images/car_refrigerator/2.jpg" alt="" class="container-box-image"></li>
+          <li><img src="/images/car_refrigerator/3.jpg" alt="" class="container-box-image"></li>
+          <li><img src="/images/car_refrigerator/4.jpg" alt="" class="container-box-image"></li>
+        </ul>
+        <ul class="hide container-box">
+          <li><img src="/images/electrical_tools/1.jpg" alt="" class="container-box-image"></li>
+          <li><img src="/images/electrical_tools/2.jpg" alt="" class="container-box-image"></li>
+          <li><img src="/images/electrical_tools/3.jpg" alt="" class="container-box-image"></li>
+          <li><img src="/images/electrical_tools/4.jpg" alt="" class="container-box-image"></li>
+          <li><img src="/images/electrical_tools/5.jpg" alt="" class="container-box-image"></li>
+          <li><img src="/images/electrical_tools/6.jpg" alt="" class="container-box-image"></li>
+          <li><img src="/images/electrical_tools/7.jpg" alt="" class="container-box-image"></li>
+          <li><img src="/images/electrical_tools/8.jpg" alt="" class="container-box-image"></li>
+          <li><img src="/images/electrical_tools/9.jpg" alt="" class="container-box-image"></li>
+          <li><img src="/images/electrical_tools/10.jpg" alt="" class="container-box-image"></li>
+          </ul>
+          <ul class="hide container-box">
+          <li><img src="/images/household_refrigerator/1.jpg" alt="" class="container-box-image"></li>
+          <li><img src="/images/household_refrigerator/2.jpg" alt="" class="container-box-image"></li>
+          <li><img src="/images/household_refrigerator/3.jpg" alt="" class="container-box-image"></li>
+        </ul>
+        <ul class="hide container-box">
+          <li><img src="/images/ice_machine/1.jpg" alt="" class="container-box-image"></li>
+          <li><img src="/images/ice_machine/2.jpg" alt="" class="container-box-image"></li>
+          <li><img src="/images/ice_machine/3.jpg" alt="" class="container-box-image"></li>
+          <li><img src="/images/ice_machine/4.jpg" alt="" class="container-box-image"></li>
+          <li><img src="/images/ice_machine/5.jpg" alt="" class="container-box-image"></li>
+          <li><img src="/images/ice_machine/6.jpg" alt="" class="container-box-image"></li>
+          <li><img src="/images/ice_machine/7.jpg" alt="" class="container-box-image"></li>
+          <li><img src="/images/ice_machine/8.jpg" alt="" class="container-box-image"></li>
+        </ul>
+        <ul class="hide container-box">
+          <li><img src="/images/mobile_air_condition/1.jpg" alt="" class="container-box-image"></li>
+          <li><img src="/images/mobile_air_condition/2.jpg" alt="" class="container-box-image"></li>
+          <li><img src="/images/mobile_air_condition/3.jpg" alt="" class="container-box-image"></li>
+          <li><img src="/images/mobile_air_condition/4.jpg" alt="" class="container-box-image"></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<script >
+  var mulu = document.getElementsByClassName("menu-item")[0];
+  var item = mulu.querySelectorAll("li");
+  var content = document.getElementById("content-right");
+  var title = content.querySelector("h3");
+  title.innerHTML = item[0].innerHTML;
+  var content_ul = content.querySelectorAll("ul");
+  content_ul[0].classList.remove("hide");
+  for(var i = 0; i < item.length; i++) {
+    item[i].index = i;
+    item[i].onclick = function() {
+      title.innerHTML = this.innerHTML;
+      for(var j = 0; j < content_ul.length; j++) {
+        if(j === this.index) {
+          content_ul[j].classList.remove("hide");
+        }else {
+          content_ul[j].classList.add("hide");
+        }
+      }
+    }
+  }
+</script>
+{{ end }}

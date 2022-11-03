@@ -13,7 +13,13 @@
   transform: translate(-50%, -50%);
   color: rgba(255, 255, 255, 1);
 }
-
+.overflow {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3 !important;
+  -webkit-box-orient: vertical;
+}
 .about-banner-img {
   max-width: 100%;
   height: 4rem;
@@ -30,12 +36,9 @@
   font-size: 0.24rem;
 }
 
-.about-content {
-}
-
 .about-content-nav {
   display: flex;
-  padding: 0.4rem 0;
+  padding: 0.4rem 0.3rem;
   justify-content: center;
   align-items: center;
   box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.1);
@@ -88,18 +91,18 @@
 
 .heyme-culture p {
   font-size: 0.16rem;
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.3rem;
 }
 
 .heyme-value-content {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .heyme-value-content-item {
   text-align: center;
   margin-bottom: 0.3rem;
-  margin-right: 0.1rem;
 }
 .heyme-value-content-item-icon {
   width: 1.2rem;
@@ -180,10 +183,6 @@
 @media screen and (min-width: 768px) {
   .heyme-course-content-item-desc p {
     max-width: 90%;
-  }
-
-  .heyme-value-content-item {
-    margin-right: 4%;
   }
 
   .heyme-course-content-item img {

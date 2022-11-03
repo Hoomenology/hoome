@@ -146,6 +146,16 @@ nav .container {
   display: none;
 }
 
+.nav-hoome {
+  display: flex;
+  padding-left: 60px;
+}
+
+.nav-img {
+  height: 65px;
+  margin: 10px 0;
+}
+
 .nav-top {
   display: none;
 }
@@ -200,7 +210,6 @@ nav .container {
   .nav-logo {
     width: 110px;
   }
-
   .nav-top li {
     width: 100px;
     height: 36px;
@@ -369,9 +378,14 @@ footer p {
   object-fit: cover;
 }
 .article-btn {
-  display: flex;
-  justify-content: space-between;
+  overflow: hidden;
   padding-bottom: 0.4rem;
+}
+.article-btn a.befor {
+  float: left;
+}
+.article-btn a.next {
+  float: right;
 }
 .article-btn a:hover {
   text-decoration: underline;
@@ -405,7 +419,10 @@ footer p {
 }
 
 /* pager */
-.join-content-box .container,
+.join-content-box .container {
+  position: relative;
+  padding-bottom: 1.2rem;
+}
 .new-content-box .container {
   position: relative;
   padding-bottom: 1.6rem;
@@ -437,6 +454,9 @@ footer p {
 }
 
 @media screen and (min-width: 1200px) {
+  .join-content-box .container {
+    padding-bottom: 50px;
+  }
   .new-content-box .container {
     padding-bottom: 50px;
   }
