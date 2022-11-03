@@ -448,7 +448,7 @@ footer p {
   margin: 0 0.2rem;
 }
 .pagination-nav .page-item.active {
-  background-color: rgba(248, 167, 44, 1);
+  background-color: rgba(231, 78, 61, 1);
   color: white;
   border-width: 0;
 }
