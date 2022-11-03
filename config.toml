@@ -1,7 +1,7 @@
 baseURL = "/"
 languageCode = "en-us"
-title = "Gigalumi-cn"
-theme = "gigalumi-cn"
+title = "Hoome-cn"
+theme = "HoomeTheme"
 paginate = 6
 
 
