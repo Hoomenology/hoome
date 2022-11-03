@@ -1,4 +1,3 @@
-
 .contact-banner {
   position: relative;
 }
@@ -29,14 +28,13 @@
   font-size: 0.24rem;
 }
 
-
-.contact-mode h4{
-  text-align: center; 
+.contact-mode h4 {
+  text-align: center;
   font-size: 0.3rem;
   padding: 0.3rem 0;
 }
-.contact-mode-icon{
-   width: 1.5rem;
+.contact-mode-icon {
+  width: 1.5rem;
   height: 1.5rem;
   background-color: white;
   border-radius: 50%;
@@ -45,20 +43,20 @@
   align-items: center;
   margin-left: auto;
   margin-right: auto;
-  border: 0.05rem solid #F7F7F7;
+  border: 0.05rem solid #f7f7f7;
 }
-.contact-mode-icon i{
+.contact-mode-icon i {
   font-size: 0.7rem;
-  color: #F8A72C;
+  color: #f8a72c;
 }
-.contact-mode-title{
+.contact-mode-title {
   font-weight: bold;
   margin: 0.1rem 0;
 }
-.contact-mode-cont{
+.contact-mode-cont {
   max-width: 2rem;
 }
-.contact-mode ul{
+.contact-mode ul {
   display: flex;
   text-align: center;
   justify-content: space-between;
@@ -68,7 +66,10 @@
 @media screen and (min-width: 1200px) {
   .contact-banner {
     height: 300px;
-    background-image: url(/images/contact_banner.jpg);
+    background-image: url(/images/7contact_banner.jpg);
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
   }
 
   .contact-banner-img {
@@ -83,36 +84,36 @@
     margin-top: 10px;
     font-size: 36px;
   }
-  .contact-mode .container{
+  .contact-mode .container {
     width: 900px;
   }
-  .contact-mode h4{
+  .contact-mode h4 {
     font-size: 24px;
     padding: 30px 0;
   }
-    
-  .contact-mode-icon{
+
+  .contact-mode-icon {
     width: 100px;
     height: 100px;
     border-width: 2px;
   }
-  .contact-mode-icon i{
+  .contact-mode-icon i {
     font-size: 50px;
   }
 
-  .contact-mode ul a{
+  .contact-mode ul a {
     flex: 1;
   }
-  .contact-mode-title{
+  .contact-mode-title {
     font-size: 12px;
   }
-  .contact-mode-cont{
+  .contact-mode-cont {
     max-width: 100%;
     font-size: 12px;
     text-align: center;
   }
-  .contact-mode ul{
+  .contact-mode ul {
     margin-top: 20px;
-    margin-bottom: 100px
+    margin-bottom: 100px;
   }
 }

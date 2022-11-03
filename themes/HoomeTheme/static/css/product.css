@@ -81,7 +81,10 @@
 @media screen and (min-width: 1200px) {
   .product-banner {
     height: 300px;
-    background-image: url(/images/product-banner.jpg);
+    background-image: url(/images/8product_banner.jpg);
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
   }
 
   .product-banner-img {
