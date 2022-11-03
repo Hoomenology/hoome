@@ -147,15 +147,16 @@ nav .container {
 }
 
 .nav-hoome {
-  display: flex;
-  padding-left: 60px;
+  display: block;
 }
 
-.nav-img {
-  height: 65px;
-  margin: 10px 0;
+.nav-img-pc {
+  display: none;
 }
 
+.nav-img-mobile {
+  height: 0.8rem;
+}
 .nav-top {
   display: none;
 }
@@ -193,6 +194,21 @@ nav .container {
 @media screen and (min-width: 768px) {
   nav .container {
     height: 90px;
+  }
+
+  .nav-hoome {
+    display: flex;
+    padding-left: 60px;
+  }
+
+  .nav-img-mobile {
+    display: none;
+  }
+
+  .nav-img-pc {
+    height: 65px;
+    margin: 10px 0;
+    display: block;
   }
 
   .nav-top {
