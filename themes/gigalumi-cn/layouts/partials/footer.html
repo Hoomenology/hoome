@@ -1,0 +1,18 @@
+<footer>
+  <div class="container">
+    <div class="footer-nav">
+      <dl>
+        <dt>关于我们</dt>
+        <dd><a href="/about"><span>企业文化</span></a></dd>
+        <dd><a href="/about"><span>集团背景</span></a></dd>
+      </dl>  
+      <dl>
+        <dt class="lastdt">联系我们</dt>
+        <dd><a href="/contact"><span>联系方式</span></a></dd>
+      </dl> 
+    </div>     
+  </div>
+</footer>
+
+{{ $mainJs := resources.Get "js/default.js" | minify | fingerprint }}
+<script src="{{ $mainJs.RelPermalink }}"></script>
