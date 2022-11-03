@@ -13,7 +13,7 @@ name = "首页"
 url = ""
 weight = 1
 [[menu.main]]
-name = "关于吉家路米"
+name = "关于灏米"
 url = "about"
 weight = 2
 [[menu.main]]

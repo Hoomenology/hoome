@@ -57,7 +57,7 @@
 
 .about-content-nav li.active {
   color: white;
-  background: #f8a72c;
+  background: #e74e3d;
 }
 
 .about-content-nav li:first-child {
@@ -111,13 +111,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 0.02rem solid #f8a72c;
+  border: 0.02rem solid #e74e3d;
   margin-left: auto;
   margin-right: auto;
 }
 .heyme-value-content-item-icon i {
   font-size: 1rem;
-  color: #f8a72c;
+  color: #e74e3d;
 }
 
 .heyme-value .heyme-value-content-item h4 {

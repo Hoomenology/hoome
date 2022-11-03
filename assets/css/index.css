@@ -41,7 +41,6 @@
 
 .company-profile-desc-cmp h2 {
   font-size: 0.32rem;
-  margin-bottom: 0.35rem;
 }
 
 .company-profile-desc-cmp p {
@@ -70,7 +69,7 @@
 }
 .company-profile-fun-icon i {
   font-size: 1rem;
-  color: #f8a72c;
+  color: #e74e3d;
 }
 
 .company-profile-fun p {
@@ -107,10 +106,10 @@
 }
 
 .company-news-content-item:hover {
-  color: #f8a72c;
+  color: #e74e3d;
 }
 .company-news-content-item:hover .company-news-content-item-date {
-  background: #f8a72c;
+  background: #e74e3d;
 }
 
 .company-news-content-item-date {
@@ -194,7 +193,7 @@
   font-size: 0.5rem;
   margin-bottom: 0.3rem;
   font-weight: bold;
-  color: #f8a72c;
+  color: #e74e3d;
 }
 
 .company-deve .date-plane p {
@@ -254,11 +253,11 @@
 .time-line ul li.active b {
   width: 0.3rem;
   height: 0.3rem;
-  background-color: #f8a72c;
+  background-color: #e74e3d;
 }
 
 .time-line ul li.active span {
-  color: #f8a72c;
+  color: #e74e3d;
 }
 
 .time-line ul li.active b::after {
@@ -498,7 +497,7 @@
     transition: transform ease 3s;
   }
   .industry-info-box:hover p {
-    color: #f8a72c;
+    color: #e74e3d;
   }
 
   .company-deve h2 {
@@ -562,7 +561,7 @@
   }
 
   .company-rele-content-item:hover p {
-    background-color: rgba(248, 167, 44, 0.8);
+    background-color: rgba(231, 78, 61, 0.8);
     transition: all ease 0.5s;
   }
   .company-rele-content-item {
