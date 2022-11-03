@@ -1,0 +1,126 @@
+
+.contact-banner {
+    position: relative;
+}
+
+.contact-banner-desc {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgba(255, 255, 255, 1);
+}
+
+.contact-banner-img {
+    max-width: 100%;
+    height: 4rem;
+    display: block;
+    object-fit: cover;
+}
+
+.contact-banner-desc h2 {
+    font-size: 0.4rem;
+    font-weight: bold;
+}
+
+.contact-banner-desc p {
+    font-size: 0.24rem;
+}
+
+
+.contact-mode h4{
+    text-align: center;
+    font-size: 0.3rem;
+    padding: 0.3rem 0;
+}
+.contact-mode-icon{
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    border: 0.05rem solid #F7F7F7;
+}
+.contact-mode-icon i{
+    font-size: 0.7rem;
+    color: #F8A72C;
+}
+
+
+
+.contact-mode-title{
+    font-weight: bold;
+    margin: 0.1rem 0;
+}
+.contact-mode-cont{
+    max-width: 2rem;
+}
+.contact-mode ul{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    margin-bottom: 0.4rem;
+}
+
+@media screen and (min-width: 1200px) {
+    .contact-banner {
+        height: 510px;
+        background-attachment: fixed;
+        background-position: center center;
+        background-size: cover;
+        background-image: url(/images/contact_banner.jpg);
+    }
+
+    .contact-banner-img {
+        display: none;
+    }
+
+    .contact-banner-desc h2 {
+        font-size: 60px;
+    }
+
+    .contact-banner-desc p {
+        margin-top: 10px;
+        font-size: 36px;
+    }
+    .contact-mode .container{
+        width: 900px;
+    }
+    .contact-mode h4{
+        font-size: 24px;
+        padding: 30px 0;
+    }
+    
+    .contact-mode-icon{
+        width: 100px;
+        height: 100px;
+        border-width: 2px;
+    }
+    .contact-mode-icon i{
+        font-size: 50px;
+    }
+
+
+
+    .contact-mode ul a{
+        flex: 1;
+    }
+    .contact-mode-title{
+        font-size: 12px;
+    }
+    .contact-mode-cont{
+        max-width: 100%;
+        font-size: 12px;
+        text-align: center;
+    }
+    .contact-mode ul{
+        margin-top: 20px;
+        margin-bottom: 100px
+    }
+}

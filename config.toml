@@ -1,0 +1,59 @@
+baseURL = "/"
+languageCode = "en-us"
+title = "Gigalumi-cn"
+theme = "gigalumi-cn"
+paginate = 6
+
+
+
+
+# Main Menu
+[[menu.main]]
+name = "首页"
+url = ""
+weight = 1
+[[menu.main]]
+name = "关于吉家路米"
+url = "about"
+weight = 2
+[[menu.main]]
+name = "产品展示"
+url = "product"
+weight = 3
+[[menu.main]]
+name = "联系我们"
+url = "contact"
+weight = 4
+
+# Footer menu
+[[menu.footer]]
+name = "Über uns"
+URL = "about"
+weight = 1
+
+[[menu.footer]]
+name = "Projekt"
+URL = "project"
+weight = 2
+
+[[menu.footer]]
+name = "Dienstleistung"
+URL = "service"
+weight = 3
+
+[[menu.footer]]
+name = "Preise"
+URL = "pricing"
+weight = 4
+
+[[menu.footer]]
+name = "Häufige Fragen"
+URL = "faq"
+weight = 5
+
+[[menu.footer]]
+name = "Kontakt"
+URL = "contact"
+weight = 6
+
+
