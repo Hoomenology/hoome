@@ -4,7 +4,12 @@ title = "Hoome-cn"
 theme = "HoomeTheme"
 paginate = 6
 
+copyright = "宁波灏米信息科技有限公司"
 
+[params]
+    dateFormat = "2022-09-16"
+    icpID = "浙ICP备2022027034号-1"
+    icpURL = "https://beian.miit.gov.cn/#/Integrated/index"
 
 
 # Main Menu
