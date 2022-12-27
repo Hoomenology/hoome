@@ -82,16 +82,23 @@
 }
 
 .heyme-course h4,
-.heyme-value h4,
-.heyme-culture h4 {
+.heyme-value h4 {
   text-align: center;
   font-size: 0.3rem;
   padding: 0.3rem 0;
 }
 
+.heyme-culture h4 {
+  text-align: center;
+  font-size: 0.3rem;
+  padding: 30px 0 !important;
+}
+
 .heyme-culture p {
-  font-size: 0.16rem;
-  margin-bottom: 0.3rem;
+  font-size: 16px;
+  font-weight: 700;
+  color: black;
+  margin-bottom: 0px;
 }
 
 .heyme-value-content {
@@ -192,7 +199,12 @@
 
 @media screen and (min-width: 992px) {
   .heyme-value-content-item {
-    margin-right: 10%;
+    width: 33%;
+  }
+
+  .heyme-value-content-item p {
+    max-width: none !important;
+    padding: 0 10px;
   }
 }
 

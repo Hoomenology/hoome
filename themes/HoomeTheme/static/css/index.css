@@ -35,9 +35,18 @@
 .company-profile {
   padding: 0.6rem 0;
 }
+.padding-bottom-0 {
+  padding-bottom: 0 !important;
+}
 
 .company-profile-desc img {
   display: none;
+}
+
+.company-profile-desc-div {
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
 }
 
 .company-profile-desc-cmp h2 {
@@ -409,7 +418,7 @@
     position: relative;
   }
 
-  .company-profile-desc::after {
+  /* .company-profile-desc::after {
     content: "";
     position: absolute;
     right: -45px;
@@ -417,7 +426,7 @@
     height: 160px;
     background: #cdcdcd;
     opacity: 0.28;
-  }
+  } */
 
   .company-profile-desc-cmp h2 {
     font-size: 18px;
@@ -426,7 +435,6 @@
 
   .company-profile-desc-cmp p {
     font-size: 14px;
-    max-width: 320px;
   }
 
   .company-profile-fun {
@@ -587,5 +595,14 @@
   }
   .company-rele-content-item p {
     font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  .company-profile-desc-div {
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    padding: 0 20px 40px 20px;
   }
 }
