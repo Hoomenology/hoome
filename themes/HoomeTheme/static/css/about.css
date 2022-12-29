@@ -96,7 +96,6 @@
 
 .heyme-culture p {
   font-size: 16px;
-  font-weight: 700;
   color: black;
   margin-bottom: 0px;
 }
@@ -258,10 +257,10 @@
   }
 
   .heyme-culture p {
-    max-width: 772px;
+    max-width: 880px;
     margin-left: auto;
     margin-right: auto;
-    font-size: 14px;
+    font-size: 16px;
     text-align: center;
     color: #666666;
   }
