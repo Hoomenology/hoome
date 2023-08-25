@@ -577,8 +577,7 @@
   .company-rele-content-item p {
     font-size: 16px;
   }
-  .talents-rele-content-item img {
-    display: block;
+  .talents-rele-content {
     width: 320px;
     height: 426.6666666px;
   }
